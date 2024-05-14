@@ -14,6 +14,7 @@ export const Container = styled.div`
     'newnote content';
   background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `
+
 export const Brand = styled.div`
   grid-area: brand;
   display: flex;
@@ -28,6 +29,7 @@ export const Brand = styled.div`
     color: ${({ theme }) => theme.COLORS.ORANGE};
   }
 `
+
 export const Menu = styled.ul`
   grid-area: menu;
   background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
@@ -39,15 +41,18 @@ export const Menu = styled.ul`
     margin-bottom: 24px;
   }
 `
+
 export const Search = styled.div`
   grid-area: search;
   padding: 64px 64px 0;
-
 `
+
 export const Content = styled.div`
   grid-area: content;
-  background: blue;
+  padding: 0 64px;
+  overflow-y: auto;
 `
+
 export const NewNote = styled.button`
   grid-area: newnote;
   background: ${({ theme }) => theme.COLORS.ORANGE};
